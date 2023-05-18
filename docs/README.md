@@ -1,7 +1,7 @@
 ---
 home: true
-tagline: 我是一只小小小小鸟~
-heroText: PengSir
+tagline: 学而至上~
+heroText: Allen
 bgImageStyle: { height: "100vh" }
 heroTextStyle: {
   color: '#fff'
