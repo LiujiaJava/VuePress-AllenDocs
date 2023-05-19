@@ -1,26 +1,26 @@
-#!/usr/bin/env sh
+# #!/usr/bin/env sh
 
-# 确保脚本抛出遇到的错误
-set -e
+# # 确保脚本抛出遇到的错误
+# set -e
 
-# 生成静态文件
-npm run build
+# # 生成静态文件
+# npm run build
 
-# 进入生成的文件夹
-cd docs/.vuepress/dist
+# # 进入生成的文件夹
+# cd docs/.vuepress/dist
 
-# 如果是发布到自定义域名
-echo 'allen.org.cn' > CNAME
+# # 如果是发布到自定义域名
+# echo 'allen.org.cn' > CNAME
 
-git init
-git add -A
-git commit -m 'deploy'
+# git init
+# git add -A
+# git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io
-git push -f  https://github.com/LiujiaJava/VuePress-AllenDocs.git main:gh-pages
+# # 如果发布到 https://<USERNAME>.github.io
+# git push -f  https://github.com/LiujiaJava/VuePress-AllenDocs.git main:gh-pages
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# 请把 penggang-home/blog-two.git 换成你的项目地址
-# git push -f git@github.com:LiujiaJava/VuePress-AllenDocs.git main:gh-pages
+# # 如果发布到 https://<USERNAME>.github.io/<REPO>
+# # 请把 penggang-home/blog-two.git 换成你的项目地址
+# # git push -f git@github.com:LiujiaJava/VuePress-AllenDocs.git main:gh-pages
 
-cd -
+# cd -
