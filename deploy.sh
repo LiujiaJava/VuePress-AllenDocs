@@ -10,17 +10,17 @@ npm run build
 cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
-# echo 'www.bookbook.cc' > CNAME
+echo 'allen.org.cn' > CNAME
 
 git init
 git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f  https://github.com/penggang-home/penggang-home.gitub.io.git master:gh-pages
+git push -f  https://github.com/LiujiaJava/VuePress-AllenDocs.git main:gh-pages
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # 请把 penggang-home/blog-two.git 换成你的项目地址
-# git push -f git@github.com:penggang-home/blog-two.git master:gh-pages
+# git push -f git@github.com:LiujiaJava/VuePress-AllenDocs.git main:gh-pages
 
 cd -

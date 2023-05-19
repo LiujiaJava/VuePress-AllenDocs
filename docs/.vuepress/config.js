@@ -4,6 +4,7 @@ const moment = require('moment');
 moment.locale("zh-cn") //显示中国的时间格式
 
 module.exports = {
+  base: '/VuePress-AllenDocs/',
   title: "Allen帮助文档",
   description: "java,Vue，前端，后端帮助文档",
   head: [
@@ -61,7 +62,7 @@ module.exports = {
     //   placeholder: '填写邮箱地址可以及时收到回复噢...',
     //   visitor: true,
     // },
-    lastUpdated: '最后更新于', 
+    lastUpdated: '最后更新时间于', 
     //友情链接
     friendLink: [
       {
